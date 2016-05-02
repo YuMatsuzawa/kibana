@@ -4,11 +4,12 @@ define(function (require) {
   ]);
 
   var configFile = JSON.parse(require('text!config'));
-  configFile.elasticsearch = (function () {
-    var a = document.createElement('a');
-    a.href = 'elasticsearch';
-    return a.href;
-  }());
+  // do not use built-in Kibana proxy server
+  // configFile.elasticsearch = (function () {
+  //   var a = document.createElement('a');
+  //   a.href = 'elasticsearch';
+  //   return a.href;
+  // }());
 
   // allow the rest of the app to get the configFile easily
   module.constant('configFile', configFile);
