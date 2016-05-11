@@ -1,15 +1,15 @@
 # Fork note
 
-This fork investigate how to serve Kibana 4.1.5 as static assets without out-of-the-box Kibana Server introduced in Kibana 4.x.
+This fork investigate how to serve Kibana as static assets without out-of-the-box Kibana Server introduced in Kibana 4.x.
 
-Working branch is [4.1.5-static](https://github.com/YuMatsuzawa/kibana/tree/4.1.5-static), which is set to default in this fork. None of the master and other fork-time branches are being worked on.
+Current working branch is [4.1.5-static](https://github.com/YuMatsuzawa/kibana/tree/4.1.5-static), which is set to default in this fork. None of other branches are being worked on.
 
 Much of the works are based on [kibana-community/kibana4-static](https://github.com/kibana-community/kibana4-static).
 
 ## Background
 
-* Using version 4.1.5 so as to be compatible with [Amazon ES](http://docs.aws.amazon.com/ja_jp/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html) which is currently version 1.5.2 (2016/04)
-* Cannot use versions below 4.1.3, since there was [a bug](https://github.com/elastic/kibana/issues/3718) which screwed up request URL when target ES is mount on subdirectory of your domain
+* Currently working on version **4.1.5** to be compatible with [Amazon ES](http://docs.aws.amazon.com/ja_jp/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html) which is currently version 1.5.2 (2016/04)
+    * Cannot use versions below 4.1.3 for this purpose, since there was [a bug](https://github.com/elastic/kibana/issues/3718) which screwed up request URL when target ES is mounted on subdirectory of your domain
 
 ## How to build
 
