@@ -8,7 +8,7 @@ Much of the works are based on [kibana-community/kibana4-static](https://github.
 
 ## Background
 
-* Currently working on version **4.1.5** to be compatible with [Amazon ES](http://docs.aws.amazon.com/ja_jp/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html) which is currently version 1.5.2 (2016/04)
+* Working on version **4.1.5** to be compatible with [Amazon ES](http://docs.aws.amazon.com/ja_jp/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html) which is currently version 1.5.2 (2016/04)
     * Cannot use versions below 4.1.3 for this purpose, since there was [a bug](https://github.com/elastic/kibana/issues/3718) which screwed up request URL when target ES is mounted on subdirectory of your domain
 
 ## How to build
